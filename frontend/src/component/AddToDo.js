@@ -60,7 +60,7 @@ export default class CreateTodo extends Component{
         }
         axios.post("http://localhost:7882/todo/add",AddToDo)
         .then((AddToDo)=>{
-            alert("Todo Add")
+            alert("Todo Added ")
             console.log(AddToDo.data)
         })
         .catch((err)=> console.log(err));
